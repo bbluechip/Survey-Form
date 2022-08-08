@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+</head>
+<body>
+    <form>
+        <header>
+            <h1>Google Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </header>
+
+        <section class="first">
+            <label for="name">Name</label><br>
+            <input id='name' type="text" placeholder="Enter your name" required><br><br>
+            <label for="surname">Surname</label><br>
+            <input id='surname' type="text" placeholder="Enter your surname" required><br><br >
+            <label for="mail">Mail</label><br>
+            <input type="mail" placeholder="info@gmail.com" required>
+        </section>
+
+        <section class="second">
+            <label for="role">Which option describes your current role?</label><br>
+            <select name="role_clarusway" id="role">
+                <option selected hidden>Select an option</option>
+                <option>Beginner</option>
+                <option>Junior</option>
+                <option>Mid</option>
+                <option>Senior</option>
+            </select>
+        </section>
+        
+        <section class="third">
+            <p>Would you recommend Google to a friend?</p>
+            <input type="radio" id="html" name="first" value="HTML">
+            <label for="html">Yes, definitely</label><br>
+            <input type="radio" id="css" name="second" value="CSS">
+            <label for="css">Maybe</label><br>
+            <input type="radio" id="javascript" name="third" value="JavaScript">
+            <label for="javascript">Not sure</label><br>
+            <input type="radio" id="javascript" name="fourth" value="JavaScript">
+            <label for="javascript">No</label>
+        </section>
+
+        <section class="fourth">
+            <label for="favorite">What is your favorite feature of Google?</label><br>
+            <select id="favorite">
+                <option selected hidden>Select an option</option>
+              <option value="point">Teamworks</option>
+              <option value="point">Pre-classes</option>
+              <option value="point">Community</option>
+              <option value="point">CMS</option>
+            </select>
+        </section>
+
+        <section class="fifth">
+            <p>What Would you like to see improved </p>
+            <input type="checkbox" id="html" name="fav_language" value="HTML">
+            <label for="html">Frontend Projects</label><br>
+            <input type="checkbox" id="css" name="fav_language" value="CSS">
+            <label for="css">Backend Projects</label><br>
+            <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">Data Science</label><br>
+            <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">Additional Courses</label>
+        </section>
+
+        <section class="sixth">
+            <p>Any comments or suggestions?</p>
+            <textarea placeholder="Enter your comment here..."></textarea>
+        </section>
+    </form>
+</body>
+</html>
